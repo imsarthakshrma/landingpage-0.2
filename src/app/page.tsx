@@ -32,7 +32,10 @@ export default function Home() {
   const ctaButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power3.out" } })
+
+    if (!headerRef.current) return
+
+    const tl = gsap.timeline({ defaults: { ease: "power3.out" } }) 
 
     tl.fromTo(headerRef.current, { y: -50, opacity: 0 }, { y: 0, opacity: 1, duration: 1 })
       .fromTo(titleRef.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, "-=0.5")
@@ -50,7 +53,7 @@ export default function Home() {
       },
     })
 
-    // Get all the letters in the heading
+    // Get all the letters in the headings
     const headingLetters = ctaHeadingRef.current?.querySelectorAll(".reveal-letter")
 
     // Animate each letter only if they exist
@@ -72,7 +75,16 @@ export default function Home() {
     ctaTimeline.fromTo(ctaSubtitleRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, "-=0.2")
 
     ctaTimeline.fromTo(ctaButtonRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, "-=0.6")
+
+    // tidy up
+    return () => {
+      tl.kill()
+      ctaTimeline.kill()
+      ScrollTrigger.getAll().forEach((st) => st.kill())
+    }
   }, [])
+
+    
 
   const handleQueryClick = (query: string) => {
     setSearchQuery(query)
@@ -109,8 +121,9 @@ export default function Home() {
                 className="flex justify-between items-center py-2 px-5 w-10/12 max-w-4xl rounded-lg bg-black/30 backdrop-blur-sm border-[1.8px] border-gray-400"
               >
                 <div className="flex items-center cursor-pointer">
-                  <link rel="stylesheet" href="/" />
-                  <Image src="/images/typographic-logo.svg" alt="Logo" width={85} height={85} />
+                  <Link href="/" className="flex items-center cursor-pointer">
+                    <Image src="/images/typographic-logo.svg" alt="Logo" width={85} height={85} />
+                  </Link>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -231,6 +244,7 @@ export default function Home() {
                   <Button
                     size="icon"
                     className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-white/10"
+                    onClick={() => console.log('TODO: Handle search for', searchQuery)}
                   >
                     <Send className="h-5 w-5 text-white" />
                   </Button>
