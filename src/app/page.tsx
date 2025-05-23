@@ -146,7 +146,7 @@ export default function Home() {
                   </Link>
                   <Button
                     variant="default"
-                    className="bg-black text-white hover:bg-black/70 transition-colors rounded-md border-[1px] border-gray-700 text-[10px] px-2 py-0.5 h-6"
+                    className="bg-black text-white hover:bg-black/70 transition-colors rounded-md border-[1.8px] border-gray-700 text-[11px] px-2 py-.5 h-6 cursor-pointer"
                   >
                     Sign Up
                   </Button>
