@@ -21,6 +21,13 @@ const inter = Inter({
     description: "Sign in or create an account to access your dashboard",
   }
   
+  /**
+   * Provides the layout structure and theming for authentication pages.
+   *
+   * Wraps authentication content in a centered, responsive layout with dark mode enabled by default, custom fonts, and system theme support.
+   *
+   * @param children - The authentication page content to render within the layout.
+   */
   export default function AuthLayout({
     children,
   }: {

@@ -18,6 +18,11 @@ import { signUp } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
+/**
+ * Renders a user registration form with fields for name, email, password, password confirmation, and optional profile image upload.
+ *
+ * The form manages its own state, displays a preview of the selected profile image, and handles asynchronous sign-up requests. On successful registration, the user is redirected to the dashboard.
+ */
 export default function SignUp() {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
@@ -192,6 +197,14 @@ export default function SignUp() {
 	);
 }
 
+/**
+ * Converts a file to a base64-encoded data URL string.
+ *
+ * @param file - The file to convert.
+ * @returns A promise that resolves with the base64-encoded string representation of the file.
+ *
+ * @throws {Error} If the file cannot be read.
+ */
 async function convertImageToBase64(file: File): Promise<string> {
 	return new Promise((resolve, reject) => {
 		const reader = new FileReader();

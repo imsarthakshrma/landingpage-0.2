@@ -11,6 +11,13 @@ import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 
+/**
+ * Provides the main responsive layout for the site, including animated header, navigation, mobile menu, page content area, and a multi-section footer.
+ *
+ * Renders a fixed background image, an animated header with navigation and authentication links, a mobile menu for small screens, and a comprehensive footer with company, product, resource, legal, and social links. The layout adapts to screen size and highlights the active navigation link based on the current route.
+ *
+ * @param children - The page content to be rendered within the layout.
+ */
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const headerRef = useRef<HTMLDivElement>(null)

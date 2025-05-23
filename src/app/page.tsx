@@ -19,6 +19,13 @@ if (typeof window !== "undefined") {
 
 
 
+/**
+ * Renders the Krod AI landing page with animated hero, call-to-action, and footer sections.
+ *
+ * The page features animated text and UI elements using GSAP, a responsive navigation menu for desktop and mobile, a hero section with a search input and example queries, a scroll-triggered CTA section, and a multi-column footer with company, product, resource, legal, and social links.
+ *
+ * @returns The complete landing page React element.
+ */
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")

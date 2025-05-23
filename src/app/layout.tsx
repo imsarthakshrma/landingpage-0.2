@@ -20,6 +20,13 @@ export const metadata: Metadata = {
   description: "Not just a Deep Research AI, but an AI made for Deep Research",
 }
 
+/**
+ * Root layout component that sets up global fonts, theming, and HTML structure for the application.
+ *
+ * Wraps all page content with a theme provider configured for system-based and class-based theme toggling, and applies imported Google fonts globally.
+ *
+ * @param children - The content to be rendered within the layout.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{

@@ -12,6 +12,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 
+/**
+ * Renders a sign-in form with email/password and Google authentication options.
+ *
+ * The form manages user input for email, password, and a "Remember me" option, and provides buttons to sign in using either email/password or Google. Loading state is displayed during authentication requests.
+ *
+ * @returns The sign-in form React element.
+ */
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
