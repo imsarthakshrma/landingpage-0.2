@@ -171,21 +171,21 @@ export default function Home() {
               <div className="md:hidden bg-black/80 backdrop-blur-md rounded-lg mt-2 p-4 border border-gray-700 animate-in fade-in slide-in-from-top-5">
                 <nav className="flex flex-col space-y-4">
                   <Link
-                    href="#features"
+                    href="/features"
                     className="text-white hover:text-purple-200 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Features
                   </Link>
                   <Link
-                    href="#pricing"
+                    href="/pricing"
                     className="text-white hover:text-purple-200 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Pricing
                   </Link>
                   <Link
-                    href="#contact"
+                    href="/contact"
                     className="text-white hover:text-purple-200 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -221,7 +221,7 @@ export default function Home() {
                 <span className="font-mono hero-gradient">Autonomous</span>{" "}
                 <span className="font-normal hero-gradient">Reasoning</span>
                 <br />
-                <span className="font-bold text-white">Research Assistant</span>
+                <span className="font-bold hero-gradient ">Research Assistant</span>
               </h1>
               <p className="text-white/80 text-lg mb-8 md:mb-12" ref={subtitleRef}>
                 Not just a Deep Research AI, but an AI made for Deep Research
@@ -360,7 +360,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link href="/demo" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
-                    Demo
+                    Book a Demo
                   </Link>
                 </li>
                 <li>
@@ -429,7 +429,7 @@ export default function Home() {
                   <Image src="/images/logo.svg" alt="Logo" width={30} height={30} />
                   <span className="font-semibold text-lg">Krod AI</span>
                 </div>
-                <span className="font-normal text-xs text-indigo-300 ml-[38px]">Argumenting Intelligence, Enhancing Discovery</span>
+                <span className="font-normal text-xs text-indigo-300 mt-1">Argumenting Intelligence, Enhancing Discovery</span>
               </div>
             </div>
             <p className="text-gray-400 text-xs">Kroskod Labs. All rights reserved.</p>

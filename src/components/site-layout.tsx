@@ -142,7 +142,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Footer */}
-        <footer className="bg-black text-white py-16 w-full">
+        <footer className="mt-auto bg-black text-white py-16 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
@@ -191,7 +191,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                   </li>
                   <li>
                     <Link href="/demo" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
-                      Demo
+                      Book a Demo
                     </Link>
                   </li>
                   <li>
@@ -260,7 +260,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                     <Image src="/images/logo.svg" alt="Logo" width={30} height={30} />
                     <span className="font-semibold text-lg">Krod AI</span>
                   </div>
-                  <span className="font-normal text-xs text-indigo-300 ml-[38px]">Argumenting Intelligence, Enhancing Discovery</span>
+                  <span className="font-normal text-xs text-indigo-300 mt-1">Argumenting Intelligence, Enhancing Discovery</span>
                 </div>
               </div>
               <p className="text-gray-400 text-xs">Kroskod Labs. All rights reserved.</p>

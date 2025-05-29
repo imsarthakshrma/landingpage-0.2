@@ -53,8 +53,8 @@ export default function FeaturesPage() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 ref={headingRef} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            Powerful Features for <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Powerful Features for your <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600 to-blue-600">
               Deep Research
             </span>
           </h1>
@@ -62,7 +62,7 @@ export default function FeaturesPage() {
             Krod AI combines cutting-edge AI technology with powerful research tools to help you solve complex problems
             and accelerate your research.
           </p>
-          <Button className="bg-black hover:bg-black/80 text-white rounded-full px-6 py-2 shimmer-button">
+          <Button className="border-[1px] gradient-to-r from-purple-400 to-pink-600 border-gray-500 bg-black hover:bg-black/80 text-white rounded-full px-6 py-2 shimmer-button cursor-pointer">
             Try Krod AI For Free
           </Button>
         </div>
@@ -159,7 +159,7 @@ export default function FeaturesPage() {
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
             Join thousands of researchers, academics, and professionals who are accelerating their work with Krod AI.
           </p>
-          <Button className="bg-black hover:bg-black/80 text-white rounded-full px-6 py-2 shimmer-button">
+          <Button className="gradient-to-r from-purple-400 to-pink-600 border-[1px] border-gray-700 bg-black hover:bg-black/80 text-white rounded-full px-6 py-2 shimmer-button cursor-pointer">
             Get Started Today
           </Button>
         </div>

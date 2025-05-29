@@ -141,3 +141,8 @@
     transform: translateY(0);
   }
 }
+
+::selection {
+    background: transparent;
+    color: #f2be6a;
+}

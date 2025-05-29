@@ -34,13 +34,13 @@ export default function ChangelogPage() {
   return (
 
     // TODO: Change the Information in the Changelog
-    
+
     <SiteLayout>
       <div className="py-16 md:py-24">
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 ref={headingRef} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600 to-blue-600">
               Changelog
             </span>
           </h1>
