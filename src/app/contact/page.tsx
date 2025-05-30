@@ -53,7 +53,7 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <h1 ref={headingRef} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
             Get in{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600 to-blue-600">Touch</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-indigo-600 to-blue-600">Touch</span>
           </h1>
           <p className="text-white/80 text-lg max-w-3xl mx-auto mb-8">
             Have questions about Krod AI? Our team is here to help. Reach out to us and we'll get back to you as soon as

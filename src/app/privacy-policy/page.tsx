@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
         <div className="text-center mb-16">
           <h1 ref={headingRef} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
             Privacy{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-600 to-blue-600">Policy</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-indigo-600 to-blue-600">Policy</span>
           </h1>
           <p className="text-white/80 text-lg max-w-3xl mx-auto font-normal">Last updated: June 2025</p>
         </div>
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
                 similar identifier.
               </li>
               <li>
-                <strong className="text-white">Contact Data:</strong> Includes email address
+                <strong className="text-white">Contact Data:</strong> Includes email address and phone number.
               </li>
               <li>
                 <strong className="text-white">Technical Data:</strong> Includes internet protocol (IP) address, your

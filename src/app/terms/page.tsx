@@ -135,8 +135,9 @@ export default function TermsPage() {
                 or entity.
               </li>
               <li>
-                To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or
-                which, as determined by us, may harm Kroskod or users of the Service or expose them to liability.
+                To engage in any other conduct that restricts or inhibits anyone&apos;s use or enjoyment of the
+                Service, or which, as determined by us, may harm Kroskod or users of the Service or expose them to
+                liability.
               </li>
             </ul>
           </section>

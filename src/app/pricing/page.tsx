@@ -38,8 +38,8 @@ const faqItems = [
     answer: "We accept all major credit cards, PayPal, and bank transfers for Enterprise plans. All payments are processed securely through our payment provider."
   },
   {
-    question: "Is there a free tr?",
-    answer: "Yes, we offer a 14-day free trial for all new users. You can try all the features of the Professional plan before deciding which plan is right for you."
+    question: "Is Krod AI free?",
+    answer: "Yes, Krod AI is free to use for individual researchers and students. And if you want more you can always subscribe to our Pro Assistant plan."
   }
 ]
 
