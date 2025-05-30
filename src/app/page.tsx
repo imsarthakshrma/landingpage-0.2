@@ -359,7 +359,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/demo" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
+                  <Link href="https://calendly.com/imsarthakshrma/15min" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Book a Demo
                   </Link>
                 </li>
