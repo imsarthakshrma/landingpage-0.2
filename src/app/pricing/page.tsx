@@ -38,7 +38,7 @@ const faqItems = [
     answer: "We accept all major credit cards, PayPal, and bank transfers for Enterprise plans. All payments are processed securely through our payment provider."
   },
   {
-    question: "Is there a free trial?",
+    question: "Is there a free tr?",
     answer: "Yes, we offer a 14-day free trial for all new users. You can try all the features of the Professional plan before deciding which plan is right for you."
   }
 ]
@@ -138,7 +138,6 @@ export default function PricingPage() {
               "500 research queries per month",
               "Advanced Assistant capabilities",
               "Be the first to use new features",
-              "Unlimited research queries",
               "10 pro web searches a day",
               "Priority Support",
             ]}
@@ -195,7 +194,7 @@ export default function PricingPage() {
             Join thousands of researchers, academics, and professionals who are accelerating their work with Krod AI.
           </p>
           <Button className=" border border-gray-500 bg-black hover:bg-black/80 text-white rounded-full px-6 py-2 shimmer-button cursor-pointer ">
-            Start Your Free Trial
+            Try Krod For Free
           </Button>
         </div>
       </div>
@@ -227,8 +226,8 @@ function PricingCard({
       }`}
     >
       {popular && (
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white text-xs px-3 py-1 rounded-full">
-          Most Popular
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-purple-600 text-white text-xs px-3 py-1 rounded-full font-mono">
+          Recommended
         </div>
       )}
       <CardHeader>
