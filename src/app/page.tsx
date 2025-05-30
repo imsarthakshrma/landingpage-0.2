@@ -128,13 +128,13 @@ export default function Home() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
-                  <Link href="#features" className="text-white hover:text-purple-200 transition-colors text-sm">
+                  <Link href="/features" className="text-white hover:text-purple-200 transition-colors text-sm">
                     Features
                   </Link>
-                  <Link href="#pricing" className="text-white hover:text-purple-200 transition-colors text-sm">
+                  <Link href="/pricing" className="text-white hover:text-purple-200 transition-colors text-sm">
                     Pricing
                   </Link>
-                  <Link href="#contact" className="text-white hover:text-purple-200 transition-colors text-sm">
+                  <Link href="/contact" className="text-white hover:text-purple-200 transition-colors text-sm">
                     Contact
                   </Link>
                 </nav>
@@ -171,21 +171,21 @@ export default function Home() {
               <div className="md:hidden bg-black/80 backdrop-blur-md rounded-lg mt-2 p-4 border border-gray-700 animate-in fade-in slide-in-from-top-5">
                 <nav className="flex flex-col space-y-4">
                   <Link
-                    href="#features"
+                    href="/features"
                     className="text-white hover:text-purple-200 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Features
                   </Link>
                   <Link
-                    href="#pricing"
+                    href="/pricing"
                     className="text-white hover:text-purple-200 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Pricing
                   </Link>
                   <Link
-                    href="#contact"
+                    href="/contact"
                     className="text-white hover:text-purple-200 transition-colors py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -221,7 +221,7 @@ export default function Home() {
                 <span className="font-mono hero-gradient">Autonomous</span>{" "}
                 <span className="font-normal hero-gradient">Reasoning</span>
                 <br />
-                <span className="font-bold text-white">Research Assistant</span>
+                <span className="font-bold hero-gradient ">Research Assistant</span>
               </h1>
               <p className="text-white/80 text-lg mb-8 md:mb-12" ref={subtitleRef}>
                 Not just a Deep Research AI, but an AI made for Deep Research
@@ -253,7 +253,9 @@ export default function Home() {
                 {/* Example Queries */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 cursor-pointer">
                   <ExampleButton
-                    onClick={() => handleQueryClick("Compare quantum computing approaches for optimization problems")}
+                    onClick={() => handleQueryClick("Compare quantum computing approaches for optimization problems")
+                    }
+                    className="hover:text-indigo-300 transition-colors"
                   >
                     Compare quantum computing approaches for optimization problems
                   </ExampleButton>
@@ -261,6 +263,7 @@ export default function Home() {
                     onClick={() =>
                       handleQueryClick("Evaluate machine learning strategies for anomaly detection in time series data")
                     }
+                    className="hover:text-indigo-300 transition-colors"
                   >
                     Evaluate machine learning strategies for anomaly detection in time series data
                   </ExampleButton>
@@ -268,11 +271,13 @@ export default function Home() {
                     onClick={() =>
                       handleQueryClick("Explain quantum computing algorithms and their applications in cryptography")
                     }
+                    className="hover:text-indigo-300 transition-colors"
                   >
                     Explain quantum computing algorithms and their applications in cryptography
                   </ExampleButton>
                   <ExampleButton
                     onClick={() => handleQueryClick("Explain recent advances in fusion energy containment methods")}
+                    className="hover:text-indigo-300 transition-colors"
                   >
                     Explain recent advances in fusion energy containment methods
                   </ExampleButton>
@@ -288,7 +293,7 @@ export default function Home() {
         className="w-full py-20"
         style={{ backgroundImage: "url(/images/gradient-bg.png)", backgroundSize: "cover" }}
       >
-        <div className="max-w-4xl mx-auto px-4 text-center">
+        <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 ref={ctaHeadingRef} className="text-white text-4xl md:text-5xl font-bold mb-4">
             {splitTextIntoLetters("Made For Your Complex Problems.")}
           </h2>
@@ -308,13 +313,14 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-black text-white py-16 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
             {/* Company */}
             <div>
               <h3 className="text-base font-semibold mb-4">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/careers" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Careers
                   </Link>
                 </li>
@@ -324,19 +330,19 @@ export default function Home() {
             {/* Product */}
             <div>
               <h3 className="text-base font-semibold mb-4">Product</h3>
-              <ul className="space-y-2">
+              <ul className="space-y">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/changelog" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Changelog
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Pricing
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/features" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     What Is Krod AI?
                   </Link>
                 </li>
@@ -346,19 +352,19 @@ export default function Home() {
             {/* Resources */}
             <div>
               <h3 className="text-base font-semibold mb-4">Resources</h3>
-              <ul className="space-y-2">
+              <ul className="space-y">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/learn" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Learn
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
-                    Demo
+                  <Link href="/demo" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
+                    Book a Demo
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/support" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Support
                   </Link>
                 </li>
@@ -368,14 +374,14 @@ export default function Home() {
             {/* Legal */}
             <div>
               <h3 className="text-base font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2">
+              <ul className="space-y">
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                  <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                     Terms & Conditions
                   </Link>
                 </li>
@@ -388,16 +394,16 @@ export default function Home() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs"
+                    href="https://x.com/KroskodLabs"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold"
                   >
                     <Twitter className="h-3 w-3" />X / Twitter
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs"
+                    href="https://www.linkedin.com/company/kroskodlabs"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold"
                   >
                     <Linkedin className="h-3 w-3" />
                     LinkedIn
@@ -405,8 +411,8 @@ export default function Home() {
                 </li>
                 <li>
                   <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs"
+                    href="https://github.com/kroskod"
+                    className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold"
                   >
                     <Github className="h-3 w-3" />
                     GitHub
@@ -416,20 +422,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+          <div className="mt-12 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <div className="text-white flex items-center gap-2">
-                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                  <div className="w-4 h-4 text-purple-600">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2L14.5 9H21.5L16 13.5L18 21L12 17L6 21L8 13.5L2.5 9H9.5L12 2Z" fill="currentColor" />
-                    </svg>
-                  </div>
+              <div className="text-white flex flex-col">
+                <div className="flex items-center gap-2">
+                  <Image src="/images/logo.svg" alt="Logo" width={30} height={30} />
+                  <span className="font-semibold text-lg">Krod AI</span>
                 </div>
-                <span className="font-semibold text-lg">kroskod</span>
+                <span className="font-normal text-xs text-indigo-300 mt-1">Argumenting Intelligence, Enhancing Discovery</span>
               </div>
             </div>
-            <p className="text-gray-400 text-xs">© {new Date().getFullYear()} Krod AI. All rights reserved.</p>
+            <p className="text-gray-400 text-xs">Kroskod Labs. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -48,13 +48,13 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
-                  <Link href="#features" className="text-white hover:text-purple-200 transition-colors text-sm">
+                  <Link href="/features" className="text-white hover:text-purple-200 transition-colors text-sm">
                     Features
                   </Link>
-                  <Link href="#pricing" className="text-white hover:text-purple-200 transition-colors text-sm">
+                  <Link href="/pricing" className="text-white hover:text-purple-200 transition-colors text-sm">
                     Pricing
                   </Link>
-                  <Link href="#contact" className="text-white hover:text-purple-200 transition-colors text-sm">
+                  <Link href="/contact" className="text-white hover:text-purple-200 transition-colors text-sm">
                     Contact
                   </Link>
                 </nav>
@@ -66,7 +66,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                   </Link>
                   <Button
                     variant="default"
-                    className="bg-black text-white hover:bg-black/70 transition-colors rounded-md border-[1px] border-gray-700 text-[10px] px-2 py-0.5 h-6"
+                    className="bg-black text-white hover:bg-black/70 transition-colors rounded-md border-[1.8px] border-gray-700 text-[11px] px-2 py-.5 h-6 cursor-pointer"
                   >
                     Sign Up
                   </Button>
@@ -142,15 +142,16 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
         </div>
 
         {/* Footer */}
-        <footer className="bg-black text-white py-16 w-full mt-auto">
+        <footer className="mt-auto bg-black text-white py-16 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
               {/* Company */}
               <div>
                 <h3 className="text-base font-semibold mb-4">Company</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/careers" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Careers
                     </Link>
                   </li>
@@ -160,19 +161,19 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
               {/* Product */}
               <div>
                 <h3 className="text-base font-semibold mb-4">Product</h3>
-                <ul className="space-y-2">
+                <ul className="space-y">
                   <li>
-                    <Link href="/changelog" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/changelog" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Changelog
                     </Link>
                   </li>
                   <li>
-                    <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Pricing
                     </Link>
                   </li>
                   <li>
-                    <Link href="/features" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/features" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       What Is Krod AI?
                     </Link>
                   </li>
@@ -182,19 +183,19 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
               {/* Resources */}
               <div>
                 <h3 className="text-base font-semibold mb-4">Resources</h3>
-                <ul className="space-y-2">
+                <ul className="space-y">
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/learn" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Learn
                     </Link>
                   </li>
                   <li>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors text-xs">
-                      Demo
+                    <Link href="/demo" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
+                      Book a Demo
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/support" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Support
                     </Link>
                   </li>
@@ -204,14 +205,14 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
               {/* Legal */}
               <div>
                 <h3 className="text-base font-semibold mb-4">Legal</h3>
-                <ul className="space-y-2">
+                <ul className="space-y">
                   <li>
-                    <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-xs">
+                    <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-xs font-semibold">
                       Terms & Conditions
                     </Link>
                   </li>
@@ -224,16 +225,16 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                 <ul className="space-y-2">
                   <li>
                     <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs"
+                      href="https://x.com/KroskodLabs"
+                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold"
                     >
                       <Twitter className="h-3 w-3" />X / Twitter
                     </Link>
                   </li>
                   <li>
                     <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs"
+                      href="https://www.linkedin.com/company/kroskodlabs"
+                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold"
                     >
                       <Linkedin className="h-3 w-3" />
                       LinkedIn
@@ -241,8 +242,8 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                   </li>
                   <li>
                     <Link
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs"
+                      href="https://github.com/kroskod"
+                      className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 text-xs font-semibold"
                     >
                       <Github className="h-3 w-3" />
                       GitHub
@@ -252,26 +253,20 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+            <div className="mt-12 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-4 md:mb-0">
-                <div className="text-white flex items-center gap-2">
-                  <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                    <div className="w-4 h-4 text-purple-600">
-                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M12 2L14.5 9H21.5L16 13.5L18 21L12 17L6 21L8 13.5L2.5 9H9.5L12 2Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
+                <div className="text-white flex flex-col">
+                  <div className="flex items-center gap-2">
+                    <Image src="/images/logo.svg" alt="Logo" width={30} height={30} />
+                    <span className="font-semibold text-lg">Krod AI</span>
                   </div>
-                  <span className="font-semibold text-lg">kroskod</span>
+                  <span className="font-normal text-xs text-indigo-300 mt-1">Argumenting Intelligence, Enhancing Discovery</span>
                 </div>
               </div>
-              <p className="text-gray-400 text-xs">© {new Date().getFullYear()} Kroskod Labs. All rights reserved.</p>
+              <p className="text-gray-400 text-xs">Kroskod Labs. All rights reserved.</p>
             </div>
           </div>
-        </footer>
+      </footer>
       </div>
     </main>
   )
