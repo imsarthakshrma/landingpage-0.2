@@ -5,7 +5,7 @@ import type React from "react"
 import { useEffect, useRef } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { Brain, Code, Database, FlaskConical, Search, Zap } from "lucide-react"
+import { Brain, Code, Database, FlaskConical, Lightbulb, LoaderCircle, Route, Search, Zap } from "lucide-react"
 
 import SiteLayout from "@/components/site-layout"
 import { Button } from "@/components/ui/button"
@@ -59,8 +59,7 @@ export default function FeaturesPage() {
             </span>
           </h1>
           <p className="text-white/80 text-lg max-w-3xl mx-auto mb-8">
-            Krod AI combines cutting-edge AI technology with powerful research tools to help you solve complex problems
-            and accelerate your research.
+          Krod helps you think through complex research problems with clarity, structure, and support
           </p>
           <Button className="border-[1px] gradient-to-r from-purple-400 to-pink-600 border-gray-500 bg-black hover:bg-black/80 text-white rounded-full px-6 py-2 shimmer-button cursor-pointer">
             Try Krod AI For Free
@@ -71,83 +70,83 @@ export default function FeaturesPage() {
         <div ref={featuresRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           <FeatureCard
             icon={<Brain className="h-8 w-8 text-purple-400" />}
-            title="Autonomous Reasoning"
-            description="Our AI can understand complex problems, break them down, and reason through solutions step by step."
+            title="Shows Its Thinking"
+            description="No black box here. You can see step-by-step how we arrive at conclusions and recommendations."
           />
           <FeatureCard
             icon={<Search className="h-8 w-8 text-purple-400" />}
-            title="Deep Research Capabilities"
-            description="Access and analyze vast amounts of research papers, data, and information to support your work."
+            title="Find What You Need, Fast"
+            description="Krod AI finds, organizes, and summarizes relevant sources so you can focus on the important stuff."
           />
           <FeatureCard
-            icon={<Database className="h-8 w-8 text-purple-400" />}
-            title="Knowledge Integration"
-            description="Seamlessly integrate knowledge from multiple domains to provide comprehensive insights."
+            icon={< LoaderCircle className="h-8 w-8 text-purple-400" />}
+            title="Never Lose Your Progress"
+            description="Never lose your progress. Krod remembers your work and can pick up where you left off."
           />
           <FeatureCard
-            icon={<Code className="h-8 w-8 text-purple-400" />}
-            title="Code Generation & Analysis"
-            description="Generate, analyze, and optimize code across multiple programming languages and frameworks."
+            icon={<Lightbulb className="h-8 w-8 text-purple-400" />}
+            title="Think Beyond The Obvious"
+            description="Krod AI help you brainstorm new angles, generate fresh hypotheses, and explore ideas you might have missed."
           />
           <FeatureCard
-            icon={<FlaskConical className="h-8 w-8 text-purple-400" />}
-            title="Scientific Problem Solving"
-            description="Tackle complex scientific problems with AI-powered analysis and solution generation."
+            icon={<Route className="h-8 w-8 text-purple-400" />}
+            title="Multiple Paths Forward"
+            description="Why settle for one solution? Krod shows you different approaches, alternative methods, and backup plans for every challenge."
           />
           <FeatureCard
             icon={<Zap className="h-8 w-8 text-purple-400" />}
-            title="Real-time Collaboration"
-            description="Collaborate with team members in real-time, sharing insights and research findings instantly."
+            title="Gets Better With You"
+            description="The more you work together, the better Krod understand your research style."
           />
         </div>
 
         {/* Advanced Features Section */}
         <div className="bg-black/40 backdrop-blur-sm rounded-xl p-8 mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-white text-center">Advanced Capabilities</h2>
+          <h2 className="text-3xl font-bold mb-8 text-white text-center">What Makes It Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-purple-300">Quantum Computing Analysis</h3>
+              <h3 className="text-xl font-semibold text-purple-300">Advanced Search</h3>
               <p className="text-white/80">
-                Analyze and optimize quantum algorithms, simulate quantum systems, and explore quantum computing
-                applications.
+                Krod helps you think through complex research problems with clarity, structure, and support
               </p>
               <ul className="list-disc list-inside text-white/70 space-y-1 text-sm">
-                <li>Quantum algorithm optimization</li>
-                <li>Quantum system simulation</li>
-                <li>Quantum computing research assistance</li>
+                <li>RAG-powered indexing</li>
+                <li>Deep semantic search</li>
+                <li>Context-aware filtering</li>
+                {/* <li>Fast access to relevant knowledge</li> */}
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-purple-300">Machine Learning Research</h3>
+              <h3 className="text-xl font-semibold text-purple-300">Connected Knowledge</h3>
               <p className="text-white/80">
-                Explore cutting-edge machine learning techniques, analyze model performance, and develop new approaches.
+              Builds links between related ideas, papers, and terms so you can navigate your research landscape more intuitively.
               </p>
               <ul className="list-disc list-inside text-white/70 space-y-1 text-sm">
-                <li>Neural architecture search</li>
-                <li>Model performance analysis</li>
-                <li>Research paper summarization and analysis</li>
+                <li>Contextual connections</li>
+                <li>Topic-based navigation</li>
+                <li>Intuitive exploration</li>
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-purple-300">Academic Research Support</h3>
+              <h3 className="text-xl font-semibold text-purple-300">Common Sense</h3>
               <p className="text-white/80">
-                Get comprehensive support for academic research, from literature review to methodology development.
+              Applies grounded, human-like judgment to avoid naive or unrealistic decisions.
               </p>
               <ul className="list-disc list-inside text-white/70 space-y-1 text-sm">
-                <li>Literature review automation</li>
-                <li>Research methodology development</li>
-                <li>Citation and reference management</li>
+                <li>Grounded reasoning</li>
+                <li>Context-aware decision-making</li>
+                <li>Realistic recommendations</li>
               </ul>
             </div>
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-purple-300">Multi-modal Analysis</h3>
+              <h3 className="text-xl font-semibold text-purple-300">Step-by-Step Logical Thinking</h3>
               <p className="text-white/80">
-                Analyze data across multiple modalities, including text, images, and structured data.
+                See how Krod reasons — not just the conclusion, but how it got there.
               </p>
               <ul className="list-disc list-inside text-white/70 space-y-1 text-sm">
-                <li>Cross-modal data integration</li>
-                <li>Multi-modal pattern recognition</li>
-                <li>Comprehensive data visualization</li>
+                <li>Transparent chain-of-thought</li>
+                <li>No black-box answers</li>
+                <li>Justification for every step</li>
               </ul>
             </div>
           </div>

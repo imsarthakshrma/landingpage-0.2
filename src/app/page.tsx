@@ -146,7 +146,7 @@ export default function Home() {
                   </Link>
                   <Button
                     variant="default"
-                    className="bg-black text-white hover:bg-black/70 transition-colors rounded-md border-[1.8px] border-gray-700 text-[11px] px-2 py-.5 h-6 cursor-pointer"
+                    className="bg-black text-white font-normal hover:bg-black/70 transition-colors rounded-md border-[1.8px] border-gray-600 text-[11.4px] px-2 py-.6 h-6 cursor-pointer"
                   >
                     Sign Up
                   </Button>
@@ -201,7 +201,7 @@ export default function Home() {
                     </Link>
                     <Button
                       variant="default"
-                      className="bg-black text-white hover:bg-black/70 transition-colors rounded-md border-[1px] border-gray-700 text-xs px-2 py-0.5 h-6"
+                      className="bg-black text-white font-normal hover:bg-black/70 transition-colors rounded-md border-[1.8px] border-gray-600 text-xs px-2 py-0.5 h-6"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Sign Up
@@ -214,17 +214,19 @@ export default function Home() {
             {/* Hero Section */}
             <section className="mt-16 md:mt-24 text-center pb-24">
               <p className="text-white/80 mb-2" ref={taglineRef}>
-                Introducing <span className="font-bold hero-gradient">Krod AI</span>
+                Meet <span className="font-bold hero-gradient">Krod AI:</span>
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl mb-4" ref={titleRef}>
                 <span className="font-light hero-gradient">The</span>{" "}
-                <span className="font-mono hero-gradient">Autonomous</span>{" "}
-                <span className="font-normal hero-gradient">Reasoning</span>
+                <span className="font-mono hero-gradient">Research</span>{" "}
+                <span className="font-normal hero-gradient">Partner for</span>
                 <br />
-                <span className="font-bold hero-gradient ">Research Assistant</span>
+                <span className="font-bold hero-gradient ">Breakthrough Thinking</span>
               </h1>
-              <p className="text-white/80 text-lg mb-8 md:mb-12" ref={subtitleRef}>
-                Not just a Deep Research AI, but an AI made for Deep Research
+              <p className="text-white/70 text-md font-inter mb-8 md:mb-12 px-5 md:px-65" ref={subtitleRef}>
+                {/* Not just a Deep Research AI, but an AI made for Deep Research */}
+                {/* Krod AI is your Research Amplification Partner. Get transparent reasoning, alternative pathways when you're stuck, and persistent memory that builds on every conversation to accelerate your discoveries. */}
+                Krod AI is your partner in research, development, and engineering—a new class of intelligent AI designed to amplify your ability to make breakthroughs in science, engineering, and academia.
               </p>
 
               {/* Search Container with Example Queries */}
